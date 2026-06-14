@@ -1,1 +1,13 @@
-
+score=0
+print("mini quizz app")
+if input("1. capital of india ?")=="delhi":
+   score+=1
+if input("2. 3+5=?")=="g":
+   score+=1
+if input("3. python is a programming language?(yes/no)")=="yes":
+   score+=1
+if input("4. largest ocean in the world?")=="pacific":
+   score+=1
+if input("5. 15*2=?")=="30":
+   score+=1
+print(f"your score:",score,"/5")
