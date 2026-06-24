@@ -1,0 +1,13 @@
+from collections import Counter
+
+error_counts = Counter()
+
+with open("log.txt", "r") as file:
+    for line in file:
+        if "ERROR:" in line:
+            error_type = line.strip().split("ERROR:")[1].strip()
+            error_counts[error_type] += 1
+
+print("Error Summary:")
+for error, count in error_counts.items():
+    print(f"{error}: {count}")
